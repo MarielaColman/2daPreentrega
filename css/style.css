@@ -14,7 +14,7 @@ h3{font-size: 10px;}
 .gridproductos{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 .gridprocesos{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
 .FlexCard{display: flex;flex-direction: column;}
-.card{border-radius: 25px; align-items: center;}
+.card{border-radius: 25px; align-items: center;padding: 10px;margin: 10px;}
 .bgcard{background-color: rgba(173, 176, 143, 0.808);}
 input{width: 75%; border-color: rgb(59, 58, 40); border-top-style: ridge; 
     border-radius: 20px;}
