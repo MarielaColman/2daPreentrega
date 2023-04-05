@@ -1,0 +1,137 @@
+*{margin: 0px;padding: 0px;}
+body{background-color: black;}
+ul{list-style-type: none;}
+li{padding: 20px;margin: 20px;}
+a{text-decoration: none;color:antiquewhite; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+p{padding: 30px;color: antiquewhite;}
+h1{text-align: center;color: antiquewhite;}
+h2{text-align: center;}
+h3{font-size: 10px;}
+.rrss{color: antiquewhite;}
+.contacto{color: antiquewhite;}
+.gridhome{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.gridnosotros{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.gridproductos{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.gridprocesos{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.FlexCard{display: flex;flex-direction: column;}
+.card{border-radius: 25px; align-items: center;}
+.bgcard{background-color: rgba(173, 176, 143, 0.808);}
+input{width: 75%; border-color: rgb(59, 58, 40); border-top-style: ridge; 
+    border-radius: 20px;}
+.img-fluid{width: 100%;height: auto;}
+
+@media screen and (min-width:1024px){
+    a{font-size: 20px;}
+    
+    .p20{padding: 20px;}
+    .m20{margin: 20px;}
+    .gridhome{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    header{grid-area: header;}
+    main{grid-area: main;}
+    footer{grid-area: footer;}
+
+    .gridmainindex{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "imgprincipal imgprincipal imgprincipal imgprincipal"
+        "titulo titulo titulo titulo"
+        "imgtexto imgtexto textoprincipal textoprincipal"
+        "imgtexto imgtexto video video";
+    }
+    .imgPrincipal{grid-area: imgprincipal;}
+    .titulo{grid-area: titulo;}
+    .imgtexto{grid-area: imgtexto;}
+    .textoprincipal{grid-area: textoprincipal;}
+    .videoyoutube{grid-area: video;}
+    
+    .gridfooter{justify-content: space-between; 
+    display: grid;
+    grid-template-areas:
+    "logo rrss contacto"
+    "copy copy copy";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: auto auto;}
+    .imgfooterlogo{grid-area: logo;}
+    .rrss{grid-area: rrss;}
+    .contacto{grid-area: contacto;}
+    .copy{grid-area:copy;}
+
+    .gridproductos{
+        display: grid;
+        grid-template-columns:25% 25% 25% 25%;
+        grid-template-rows:auto auto;
+        grid-template-areas: 
+        "encproductos encproductos encproductos encproductos "
+        "card1 card2 card3 card4";
+    }
+    .nuestrosproductos{grid-area:encproductos;}
+    .card1{grid-area:card1;}
+    .card2{grid-area:card2;}
+    .card3{grid-area:card3;}
+    .card4{grid-area:card4;}
+
+    .gridmainnosotros{
+        display: grid;
+        grid-template-columns:25% 25% 25% 25%;
+        grid-template-rows:auto auto auto auto;
+        grid-template-areas:
+        "infofermin infofermin fotofermin fotofermin"
+        "fotoceci1 fotoceci1 infoceci infoceci"
+        "fotoceci2 fotoceci2 fotofermin2 fotofermin2"
+        "fotoceci2 fotoceci2 fotofermin2 fotofermin2";
+    }
+
+    .imgceci{grid-area: fotoceci1;}
+    .infoceci{grid-area: infoceci;}
+    .imgfermin{grid-area: fotofermin;}
+    .infofermin{grid-area: infofermin;}
+    .imgceci2{grid-area: fotoceci2;}
+    .imgfermin2{grid-area: fotofermin2;}
+
+
+    .JCspaceb{justify-content: space-between;}
+    .rrss h3{font-size: 20px;color:antiquewhite;}
+    .contacto h3{font-size: 20px;color: antiquewhite;}
+    .flexRow{display: flex; flex-direction: row;flex-wrap: wrap;justify-content: space-between;}
+}
+
+@media screen and (max-width:768px){
+    ul{display: flex;flex-direction: row;justify-content: center;}
+    li{padding: 3px;margin: 3px;}
+    main,footer,header{display: flex;flex-direction: column;align-items: center;}
+    .img-fluid{width: 100%;height: auto;}
+
+    .gridproductos{display: flex;flex-direction: column;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
